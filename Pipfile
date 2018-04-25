@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+ptipython = "*"
+neovim = "*"
+jedi = "*"
+
+[packages]
+click = "*"
+"newspaper3k" = "*"
+
+[requires]
+python_version = "3"
