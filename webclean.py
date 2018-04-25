@@ -34,15 +34,20 @@ def webclean(url, text):
             <html>
                    <head>
                        <title>
-                           {0}
+                           {a.title}
                        </title>
                    </head>
                    <body>
-                       <h1>{0}</h1>
-                       {1}
+                   <p>
+                       <h1>{a.title}</h1>
+                   </p>
+                   <p><a href="{a.url}">Original article</a></p>
+                   <p>
+                       {a.article_html}
+                   </p>
                    </body>
                </html>
-            """.format(article.title, article.article_html))
+            """.format(a=article))
 
 
 if __name__ == '__main__':
